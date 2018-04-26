@@ -38,8 +38,8 @@ namespace WpfApplication1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            double w = double.Parse(sl2.Value.ToString());
-            double h = double.Parse(sl1.Value.ToString()) /100;
+            double w = double.Parse(heightbox2.Text);
+            double h = double.Parse(heightbox.Text)/100;
             double r = w / (h*h);
             resultext.Text = r.ToString();
 
@@ -49,6 +49,7 @@ namespace WpfApplication1
         {
             heightbox.Text = sl1.Value.ToString();
             heightbox2.Text = sl2.Value.ToString();
+
         }
     }
 }
