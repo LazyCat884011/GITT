@@ -14,9 +14,11 @@
         <TextBlock Margin="58,62,420.4,226.4">身高:</TextBlock>
         <TextBlock Margin="58,144,420.4,144.4">體重:</TextBlock>
         <TextBox Margin="120,57,109.4,231.4" Name="heightbox"></TextBox>
-        <TextBox Margin="120,142,109.4,146.4" Name="heightbox2"></TextBox>
-        <Slider Margin="58,0,51.4,95.4" Height="36" VerticalAlignment="Bottom"></Slider>
+        <Menu Margin="222,10,251.4,280.4">BMI</Menu>
+            <TextBox Margin="120,142,109.4,146.4" Name="heightbox2"></TextBox>
+        <Slider Margin="58,0,51.4,190.4" Height="36" VerticalAlignment="Bottom" ValueChanged="Slider_ValueChanged" Maximum="200" Minimum="0" RenderTransformOrigin="0.484,-2.2" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Name="sl1"></Slider>
         <TextBlock Foreground="Red" Margin="361,219,28.4,17.4" FontSize="70" Name="resultext">0</TextBlock>
+        <Slider Margin="58,0,51.4,95.4" Height="36" VerticalAlignment="Bottom" ValueChanged="Slider_ValueChanged" Maximum="200" Minimum="0" RenderTransformOrigin="0.484,-2.2" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Name="sl2"></Slider>
 
 
 
