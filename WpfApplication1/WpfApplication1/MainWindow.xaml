@@ -9,14 +9,14 @@
     <Grid>
         
         <Button Margin="430,57,43.4,233.4" RenderTransformOrigin="1.131,0.566" Background="Black" Foreground="CadetBlue" Click="Button_Click">清除</Button>
-        <Button Margin="430,144,43.4,146.4" RenderTransformOrigin="1.131,0.566" Background="Black" Foreground="CadetBlue">清除</Button>
-        <Button Margin="200,232,234.4,28.4" Background="Black" Foreground="CadetBlue">計算</Button>
+        <Button Margin="430,144,43.4,146.4" RenderTransformOrigin="1.131,0.566" Background="Black" Foreground="CadetBlue" Click="Button_Click_1">清除</Button>
+        <Button Margin="200,232,234.4,28.4" Background="Black" Foreground="CadetBlue" Click="Button_Click_2">計算</Button>
         <TextBlock Margin="58,62,420.4,226.4">身高:</TextBlock>
         <TextBlock Margin="58,144,420.4,144.4">體重:</TextBlock>
         <TextBox Margin="120,57,109.4,231.4" Name="heightbox"></TextBox>
-        <TextBox Margin="120,142,109.4,146.4"></TextBox>
+        <TextBox Margin="120,142,109.4,146.4" Name="heightbox2"></TextBox>
         <Slider Margin="58,0,51.4,95.4" Height="36" VerticalAlignment="Bottom"></Slider>
-        <TextBlock Foreground="Red" Margin="414,208,51.4,28.4" FontSize="70">0</TextBlock>
+        <TextBlock Foreground="Red" Margin="361,219,28.4,17.4" FontSize="70" Name="resultext">0</TextBlock>
 
 
 

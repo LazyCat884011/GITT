@@ -125,23 +125,7 @@ namespace WpfApplication1 {
             this.heightbox2 = ((System.Windows.Controls.TextBox)(target));
             return;
             case 6:
-            
-            #line 18 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Slider)(target)).ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.Slider_ValueChanged);
-            
-            #line default
-            #line hidden
-            return;
-            case 7:
             this.resultext = ((System.Windows.Controls.TextBlock)(target));
-            return;
-            case 8:
-            
-            #line 20 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Slider)(target)).ValueChanged += new System.Windows.RoutedPropertyChangedEventHandler<double>(this.Slider_ValueChanged);
-            
-            #line default
-            #line hidden
             return;
             }
             this._contentLoaded = true;

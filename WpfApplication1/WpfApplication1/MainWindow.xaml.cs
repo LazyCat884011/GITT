@@ -29,5 +29,20 @@ namespace WpfApplication1
         {
             heightbox.Text = "";
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            heightbox2.Text = "";
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            double w = double.Parse(heightbox2.Text);
+            double h = double.Parse(heightbox.Text)/100;
+            double r = w / (h*h);
+            resultext.Text = r.ToString();
+
+        }
     }
 }
