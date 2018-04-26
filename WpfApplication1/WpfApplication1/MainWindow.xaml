@@ -16,6 +16,7 @@
         <TextBox Margin="120,57,109.4,231.4" Name="heightbox"></TextBox>
         <TextBox Margin="120,142,109.4,146.4"></TextBox>
         <Slider Margin="58,0,51.4,95.4" Height="36" VerticalAlignment="Bottom"></Slider>
+        <TextBlock Foreground="Red" Margin="414,208,51.4,28.4" FontSize="70">0</TextBlock>
 
 
 
