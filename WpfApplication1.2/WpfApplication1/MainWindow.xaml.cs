@@ -24,5 +24,28 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            double value = Math.Round(heightslider.Value, 1);
+            heightnumber.Text = value.ToString();
+            double v = (value / 200) * 439.2;
+            Canvas.SetLeft( Height, v);
+
+            double h = double.Parse(heightnumber.Text);
+            double w = double.Parse(weightnumber.Text);
+            double bmi = w / Math.Pow((h / 100), 2);
+            string[] parts = bmi.ToString().Split('.');
+            bminumber1.Text = parts[0];
+            if(parts.Length>1)
+            {
+                bminumber2.Text = "." + parts[1];
+            }
+            else
+            {
+                bminumber2.Text = ".0";
+            }
+               
+        }
     }
 }

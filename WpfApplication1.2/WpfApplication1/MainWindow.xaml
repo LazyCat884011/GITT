@@ -7,16 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <StackPanel>
-        <TextBox Margin="0,0,-0.6,0" Text="100"/>
 
 
-        <Slider Margin="0,0,0.4,0"/>
-        
-        <TextBox>100</TextBox>
-        
-        <Slider></Slider>
-        
-        <TextBox>0</TextBox>
+        <Canvas Height="50" Background="blue" Margin="43,0,36.4,0" >
+            <Border CornerRadius="10" Background="AliceBlue" Canvas.Top="0" Canvas.Left="0" Name="Height">
+                <TextBlock  x:Name="heightnumber" TextAlignment="Center" Padding="13" >100</TextBlock>
+            </Border>
+        </Canvas>
+        <Slider Margin="43,0,36.4,0" ValueChanged="Slider_ValueChanged" Maximum="200" Minimum="0"    x:Name="heightslider"/>
+
+        <TextBox Text="100" Name="weightnumber"/>
+
+        <Slider Minimum="0" Maximum="200" x:Name="weightslider"></Slider>
+        <StackPanel >
+            <TextBlock FontSize="40"><Run Text="29" Name="bminumber1"/><InlineUIContainer>
+                    <TextBlock FontSize="20" Width="519" Margin="0 -15 0 0" ><Run Text=".5" Name="bminumber2"/></TextBlock>
+                </InlineUIContainer></TextBlock>
+        </StackPanel>
+
 
 
     </StackPanel>
